@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Campanha - VIDA+</title>
+    <link rel="stylesheet" href="../css/criarcampanha.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../../logo.png" alt="Logo VIDA+" class="logo">
+            <h1>VIDA+</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/doador_page.html">Formulário de Informações Pessoais</a></li>
+                <li><a href="#">Sistema de Recompensas</a></li>
+                <li><a href="../html/agendamento.html">Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="criar-campanha">
+            <h1>Criação de campanha</h1>
+            <form>
+                <div class="form-group">
+                    <label for="tipo-sangue">Tipo Sanguíneo Desejado</label>
+                    <select id="tipo-sangue">
+                        <option value="">Selecione...</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="regiao">Região de Campinas da Coleta</label>
+                    <select id="regiao">
+                        <option value="">Selecione...</option>
+                        <option value="norte">Norte</option>
+                        <option value="sul">Sul</option>
+                        <option value="leste">Leste</option>
+                        <option value="sudoeste">Sudoeste</option>
+                        <option value="noroeste">Noroeste</option>
+                        <option value="centro">Centro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data-inicio">Data de Início</label>
+                    <input type="date" id="data-inicio">
+                </div>
+
+                <div class="form-group">
+                    <label for="data-final">Data de Fim</label>
+                    <input type="date" id="data-final">
+                </div>
+
+                <div class="form-group">
+                    <label for="horario-inicio">Horário da Primeira Coleta</label>
+                    <input type="time" id="horario-inicio">
+                </div>
+
+                <div class="form-group">
+                    <label for="horario-final">Horário da Última Coleta</label>
+                    <input type="time" id="horario-final">
+                </div>
+
+                <div class="form-group">
+                    <label for="tempo-coleta">Tempo de Coleta</label>
+                    <input type="text" id="tempo-coleta" placeholder="Ex: 30 min">
+                </div>
+
+                <div class="form-group">
+                    <label for="atendentes-simultaneos">Quantidade de Atendimentos Simultâneos</label>
+                    <input type="number" id="atendentes-simultaneos">
+                </div>
+
+                <!-- Coluna para Checkbox e Descrição do Incentivo -->
+                <div class="coluna-incentivo">
+                    <label>
+                        <input type="checkbox" id="incentivoCheckbox">
+                        <span id="text_checkbox">Será oferecido incentivo</span>
+                    </label>
+                    <br> <!-- Adiciona uma quebra de linha -->
+                    <textarea id="descricaoIncentivo" placeholder="Descrição do Incentivo"></textarea>
+                </div>
+
+                <div class="donors-info">
+                    Quantidade de doadores localizados na região: <strong>40</strong>
+                </div>
+
+                <button type="submit" class="botao-continuar">Continuar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

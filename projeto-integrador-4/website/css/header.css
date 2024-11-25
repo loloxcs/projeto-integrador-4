@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+        ul{
+            display: flex;
+            gap:2rem;
+            list-style: none;
+
+            li{
+                a{
+                    font-size:  16px;
+                    div{
+                        width: 0;
+                        height: 1px;
+                        background-color: white;
+                        transition: .3s;
+                        right: 50%;
+                    }
+                        &:hover div{
+                            width: 100%;
+                        }
+                }
+            }
+        }
+}

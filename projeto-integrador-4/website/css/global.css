@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e1e;
+}
+
+header{
+    background:linear-gradient(to right, #8B0000, #FF6347);
+    padding-block: 2rem;
+}
+
+nav {
+    padding-block: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}

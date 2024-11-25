@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, Arial, sans-serif;
+}
+
+body {
+    background: #e4e4e4;
+}
+
+header {
+    background: linear-gradient(to right, #fe967c, #b20303);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+.campaign-creation {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+
+.campaign-creation h1 {
+    color: #a00000;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.donors-info {
+    grid-column: span 2;
+    color: #a00000;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.botao-continuar {
+    grid-column: span 2;
+    background-color: #a00000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botao-continuar:hover {
+    background-color: #800000;
+}
+
+/*incentivo*/
+
+#incentivoCheckbox {
+    transform: scale(1);
+    /* Mantém o tamanho original do checkbox */
+    height: auto;
+    /* Define a altura como auto para o checkbox comum */
+    margin: 0;
+    /* Remove a margem padrão do checkbox */
+    padding: 0;
+    /* Remove o padding padrão */
+    width: auto;
+    /* Define a largura como auto para o checkbox comum */
+    display: inline-block;
+    /* Permite que o checkbox seja exibido na mesma linha */
+}
+
+#text_checkbox {
+    display: inline-block;
+    /* Mantém o texto ao lado do checkbox */
+    margin-left: 8px;
+    /* Espaço entre o checkbox e o texto */
+}
+
+#descricaoIncentivo {
+    grid-column: span 2;
+    width: 202.5%;
+    /* Define a largura do textarea */
+    height: 50px;
+    /* Define a altura do textarea */
+    margin-top: 2px;
+    /* Espaço superior reduzido para aproximar */
+    padding: 10px;
+    /* Espaçamento interno para o textarea */
+    border: 1px solid #ccc;
+    /* Borda padrão */
+    border-radius: 4px;
+    /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para destaque */
+    resize: none;
+    /* Desativa o redimensionamento do textarea */
+}

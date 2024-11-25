@@ -1,0 +1,45 @@
+main {
+    padding-inline: 2rem;
+}
+
+.container-checkbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #000;
+    font-size: 1.2rem;
+}
+
+input[type="text"]{
+    padding: .4rem;
+
+}
+
+.btn-cadastrar{
+    background-color: #b20202;
+    color: #ccc;
+    padding-block: 1rem;
+    padding-inline: 4rem;
+    border-radius: 3rem;
+    border: 0;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1.2rem;
+
+    &:hover{
+        background-color: #b20303;
+        color: #fff;
+    }
+}
+
+.organiza{
+    display: flex;
+}

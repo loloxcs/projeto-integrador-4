@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDA+ - Formulário</title>
+    <link rel="stylesheet" href="../css/doador.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">VIDA+</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Formulário de informações pessoais</a></li>
+                <li><a href="#">Sistema de Recompensas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <h1>Preencha o formulário</h1>
+        <form action="#" method="post" class="form">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-sanguineo">Digite seu tipo sanguíneo</label>
+                <input type="text" id="tipo-sanguineo" name="tipo-sanguineo" placeholder="Ex: O+, A-" required>
+            </div>
+
+            <div class="form-group">
+                <label for="peso">Peso</label>
+                <input type="number" id="peso" name="peso" placeholder="Seu peso (kg)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cep">CEP do seu endereço</label>
+                <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678" required>
+            </div>
+
+            <p>Marque se você teve ou tem alguma das condições abaixo para saber.</p>
+            <div class="checkbox-group">
+                <div>
+                    <input type="checkbox" id="hepatite1" name="condicao" value="hepatite1">
+                    <label for="hepatite1">Hepatite após os 11 anos de idade</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hepatites" name="condicao" value="hepatites">
+                    <label for="hepatites">Hepatites B e C</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="aids" name="condicao" value="aids">
+                    <label for="aids">AIDS (vírus HIV)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="substancias" name="condicao" value="substancias">
+                    <label for="substancias">Uso de substâncias químicas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="parkinson" name="condicao" value="parkinson">
+                    <label for="parkinson">Doença de Parkinson</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+    </main>
+</body>
+</html>

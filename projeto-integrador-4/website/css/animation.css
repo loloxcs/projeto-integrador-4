@@ -1,0 +1,8 @@
+@keyframes gradient-animation {
+    from {
+        background: linear-gradient(90deg, #FD5949, #D6249F, #285AEB);
+    }
+    to {
+        background: linear-gradient(90deg, #285AEB, #D6249F, #FD5949);
+    }
+}

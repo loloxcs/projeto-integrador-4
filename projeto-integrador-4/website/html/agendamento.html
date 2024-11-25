@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Doação - VIDA+</title>
+    <link rel="stylesheet" href="../css/agendamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="../../logo.png" alt="Logo VIDA+" class="logo">
+                <h1>VIDA+</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/doador_page.html">Formulário de Informações Pessoais</a></li>
+                <li><a href="#">Sistema de Recompensas</a></li>
+                <li><a href="../html/agendamento.html">Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="agendamento">
+            <h2>Agende a sua doação de sangue</h2>
+            <form>
+                <label for="local">Local de Doação</label>
+                <select name="local-agendamento" id="local-agendamento">
+                    <option value="hemocentro-1">Centro de Hemoterapia Celular em Medicina de Campinas</option>
+                    <option value="hemocentro-2">Hemocamp Clínica de Hemoterapia</option>
+                    <option value="hemocentro-3">Hemocentro Campinas / Unicamp</option>
+                    <option value="hemocentro-4">Posto de Coleta Mário Gatti</option>
+                    <option value="hemocentro-5">Posto de Coleta Boldrini</option>
+                </select>
+                <button type="submit">Pesquisar disponibilidade</button>
+            </form>
+
+            <div class="horarios">
+                <p>Opções de dia e horário:</p>
+                <div class="dia">
+                    <p>07/10 (segunda-feira):</p>
+                    <button class="disponivel">08:00</button>
+                    <button class="disponivel">09:00</button>
+                    <button class="disponivel">10:00</button>
+                    <button class="disponivel">11:00</button>
+                    <button class="disponivel">13:00</button>
+                </div>
+                <div class="dia">
+                    <p>08/10 (terça-feira):</p>
+                    <button class="disponivel">08:00</button>
+                    <button class="disponivel">09:00</button>
+                    <button class="disponivel">10:00</button>
+                    <button class="indisponivel">11:00</button>
+                    <button class="disponivel">13:00</button>
+                </div>
+                <div class="dia">
+                    <p>09/10 (quarta-feira):</p>
+                    <button class="disponivel">08:00</button>
+                    <button class="indisponivel">09:00</button>
+                    <button class="disponivel">10:00</button>
+                    <button class="indisponivel">11:00</button>
+                    <button class="disponivel">13:00</button>
+                </div>
+                <div class="dia">
+                    <p>10/10 (quinta-feira):</p>
+                    <button class="disponivel">08:00</button>
+                    <button class="disponivel">09:00</button>
+                    <button class="disponivel">10:00</button>
+                    <button class="disponivel">11:00</button>
+                    <button class="disponivel">13:00</button>
+                </div>
+                <div class="dia">
+                    <p>11/10 (sexta-feira):</p>
+                    <button class="disponivel">08:00</button>
+                    <button class="disponivel">09:00</button>
+                    <button class="disponivel">10:00</button>
+                    <button class="disponivel">11:00</button>
+                    <button class="disponivel">13:00</button>
+                </div>
+            </div>
+
+            <button class="agendar-btn">Agendar!</button>
+        </section>
+    </main>
+</body>
+</html>
